@@ -3,7 +3,7 @@ import random
 words_bank = (
     'автострада', 'бензин', 'инопланетянин', 'самолет',
     'библиотека', 'шайба', 'олимпиада', 'весна',
-    'шахматы',
+    'шахматы'
 )
 
 secret_word = random.choice(words_bank)
@@ -26,7 +26,7 @@ while True:
                 gamer_word[idx] = letter
         if gamer_word.count('*') == 0:
             print('Поздравляю! Вы выиграли!')
-            print(f'Было загадано слово: {secret_word}')
+            print(f'Было загадано слово: {secret_word.upper()}')
             break
     else:
         print('Нет такой буквы...')
